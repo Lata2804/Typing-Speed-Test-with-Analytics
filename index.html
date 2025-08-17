@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed Test 🚀</h1>
+        
+        <div class="gamification">
+            <p>Level: <span id="level">1</span></p>
+            <div class="xp-bar-container">
+                <div id="xp-bar" class="xp-bar"></div>
+            </div>
+            <p>XP: <span id="xp">0</span> / <span id="xp-needed">100</span></p>
+        </div>
+
+        <div id="text-to-type" class="text-display">
+            Click the area below to start the test.
+        </div>
+        
+        <textarea id="user-input" rows="6" placeholder="Start typing here..."></textarea>
+        
+        <div class="stats">
+            <div>Time: <span id="timer">60</span>s</div>
+            <div>WPM: <span id="wpm">0</span></div>
+            <div>Accuracy: <span id="accuracy">100</span>%</div>
+        </div>
+        
+        <button id="restart-btn">Restart</button>
+
+        <div class="analytics">
+            <h2>Your Progress</h2>
+            <canvas id="progress-chart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
